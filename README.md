@@ -31,14 +31,21 @@ A comprehensive Automated Machine Learning (AutoML) library that handles the ent
 
 ## Installation
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/AutoML.git
-cd AutoML
+You can install the package directly from PyPI:
 
-# Install dependencies
-pip install -r requirements.txt
+```bash
+pip install automl
 ```
+
+## Command-Line Usage
+
+You can run the AutoML pipeline directly from the command line:
+
+```bash
+automlite --train path/to/train.csv --target target_column_name --test path/to/test.csv --output path/to/output.csv --columns column1 column2 column3
+```
+
+Replace `path/to/train.csv`, `target_column_name`, `path/to/test.csv`, and `path/to/output.csv` with the actual paths and names relevant to your data. Specify the columns you want to include in the output file using the `--columns` argument. If not specified, all columns will be included by default.
 
 ## Quick Start
 
